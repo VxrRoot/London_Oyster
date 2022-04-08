@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>London Oyster's</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <main>
+      <!-- Station Info -->
+      <div class="station-info">
+         <span class="current-station"></span>
+      </div>
+
+      <!--  Balance  -->
+      <div class="balance-wrapper">
+         Your balance
+         <span class="balance">
+            0$
+         </span>
+         <button class="btn-primary add-money">
+            Add money
+         </button>
+      </div>
+      <!-- End - balance -->
+
+      <!-- Start Travel -->
+      <div class="start-travel">
+        <div class="travel-to-modal">
+            <span class="close-btn close-travel-modal">
+                X
+            </span>
+            <div>
+                
+            </div>
+            <div class="dashboard">
+                <div>
+                    <button class="btn-primary go-torward-prev">
+                        Go towards: 
+                    </button>
+                    <button class="btn-primary get-off-btn">
+                        Get Off
+                    </button>
+                    <button class="btn-primary go-torward-next">
+                        Go towards: 
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="travel-by-bus-modal">
+            <span class="close-travel-by-bus close-btn">
+                X
+            </span>
+            <div class="dashboard">
+                Travel by bus to:
+                <div class="travel-by-bus-btns">
+                    <button class="btn-primary travel-by-bus-to" station=0>
+                        Holborn
+                    </button>
+                    <button class="btn-primary travel-by-bus-to" station=1>
+                        Eral's Court 1
+                    </button>
+                    <button class="btn-primary travel-by-bus-to" station=2>
+                        Eral's Court 2
+                    </button>
+                    <button class="btn-primary travel-by-bus-to" station=3>
+                        Wimbledon
+                    </button>
+                    <button class="btn-primary travel-by-bus-to" station=4>
+                        Hammersmith
+                    </button>
+                </div>
+            </div>
+        </div>
+
+         <button class="btn-primary start-travel-btn" >Start Travel</button>
+         <button class="btn-primary travel-by-bus">
+            Travel by bus
+        </button>
+      </div>
+
+      <!-- End - Start Travel -->
+
+      <!-- Modal -->
+      <div class="modal-add-money">
+         <span class="close-btn close-add-money-modal">
+            X
+         </span>
+         <div class="btn-add-money-wrapper">
+            <button class="btn-primary add-cash" data-value="5">
+               5$
+            </button>
+            <button class="btn-primary add-cash" data-value="10">
+               10$
+            </button>
+            <button class="btn-primary add-cash" data-value="15">
+               15$
+            </button>
+            <button class="btn-primary add-cash" data-value="20">
+               20$
+            </button>
+            <button class="btn-primary add-cash" data-value="25">
+               25$
+            </button>
+            <button class="btn-primary add-cash" data-value="30">
+               30$
+            </button>
+         </div>
+      </div>
+      <!-- End - Modal -->
+   </main>
+<script src="./dist/app.js"></script>
+</body>
+</html>
